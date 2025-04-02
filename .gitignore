@@ -1,0 +1,13 @@
+# Dans my_ws/.gitignore
+
+# Ignorer la sortie de compilation ROS2
+build/
+install/
+log/
+
+# Ignorer le dossier de données
+data/
+
+# (Optionnel) Ignorer les fichiers cache Python
+**.pyc
+__pycache__/

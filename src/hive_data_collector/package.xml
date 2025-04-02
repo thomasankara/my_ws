@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hive_data_collector</name>
+  <version>0.1.0</version>
+  <description>Single package with a C++ lidar crop node and a Python rosbag manager.</description>
+  <maintainer email="vous@example.com">Votre Nom</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Outils de build (CMake + ament_cmake_python) -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Dépendances C++ -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>pcl_msgs</build_depend>  <!-- si besoin -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>pcl_conversions</exec_depend>
+  <exec_depend>pcl_msgs</exec_depend>
+
+  <!-- Dépendances Python -->
+  <build_depend>rclpy</build_depend>
+  <exec_depend>rclpy</exec_depend>
+
+  <!-- Selon vos topics, vous pouvez rajouter d'autres dépendances
+       ex: tf2_msgs, geometry_msgs, etc. -->
+
+  <export>
+    <!-- Indique qu'on utilise un build de type ament_cmake -->
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
