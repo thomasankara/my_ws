@@ -22,6 +22,7 @@ install(
   PROGRAMS
     scripts/rosbag_recorder_manager.py
     scripts/rosbag_player_manager.py
+    scripts/rosbag_pre_kitti.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
