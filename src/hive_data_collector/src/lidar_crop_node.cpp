@@ -17,10 +17,10 @@ public:
   : Node("lidar_crop_node")
   {
     // Paramètres de filtrage (par défaut : ±10 m en X/Y, illimité en Z)
-    this->declare_parameter("x_min", -15.0);
-    this->declare_parameter("x_max",  15.0);
-    this->declare_parameter("y_min", -15.0);
-    this->declare_parameter("y_max",  15.0);
+    this->declare_parameter("x_min", -16.0);
+    this->declare_parameter("x_max",  16.0);
+    this->declare_parameter("y_min", -16.0);
+    this->declare_parameter("y_max",  16.0);
     this->declare_parameter("z_min", -10.0);
     this->declare_parameter("z_max",  10.0);
 
